@@ -7,15 +7,15 @@
             </div>
         </div>
         <ul class="like-lists">
-            <li class="like-item">
+            <router-link to="/detail" tag="li" class="like-item" v-for="(item,index) in weekendList" :key="index">
                 <a href="#">
                     <div class="like-item-img">
-                        <img src="http://img1.qunarzz.com/sight/p0/1709/41/411f234d79457081a3.img.jpg_200x200_ea02ef99.jpg">
+                        <img :src="item.imgUrl">
                         <div class="like-item-tag"></div>
                     </div>
                     <div class="like-item-info">
                         <div class="like-item-title">
-                            长隆野生动物世界
+                            {{item.title}}
                         </div>
                         <div class="like-item-comment">
                             <span class="star">
@@ -32,46 +32,20 @@
                             <span class="like-item-address">广州长隆...</span>
                         </div>
                         <div class="like-item-feature">
-                            熊猫三胞胎与您共享欢乐时光
+                            {{item.desc}}
                         </div>
                     </div>
                 </a>
-            </li>
-            <li class="like-item">
-                <a href="#">
-                    <div class="like-item-img">
-                        <img src="http://img1.qunarzz.com/sight/p0/1709/41/411f234d79457081a3.img.jpg_200x200_ea02ef99.jpg">
-                        <div class="like-item-tag"></div>
-                    </div>
-                    <div class="like-item-info">
-                        <div class="like-item-title">
-                            长隆野生动物世界
-                        </div>
-                        <div class="like-item-comment">
-                            <span class="star">
-                                <i class="iconfont icon-star_full"></i>
-                                <i class="iconfont icon-star_full"></i>
-                                <i class="iconfont icon-star_full"></i>
-                                <i class="iconfont icon-star_full"></i>
-                                <i class="iconfont icon-star_full"></i>
-                            </span>
-                            <span class="comment">115482条评论</span>
-                        </div>
-                        <div class="like-item-price">
-                            <div class="price">¥<em>266</em><i>起</i></div>
-                            <span class="like-item-address">广州长隆...</span>
-                        </div>
-                        <div class="like-item-feature">
-                            熊猫三胞胎与您共享欢乐时光
-                        </div>
-                    </div>
-                </a>
-            </li> 
+            </router-link>
+            <a href="#" class="more-product">查看所有的产品</a>
         </ul>
     </div>
 </template>
 <script>
 export default {
+    props:{
+        weekendList:Array
+    },
     name:'HomeLike'
 }
 </script>
@@ -168,6 +142,16 @@ export default {
                         -webkit-box-orient: vertical;
                     }
                 }
+            }
+            .more-product{
+                display: block;
+                padding: .2rem 0;
+                background-color: #fff;
+                text-align: center;
+                color: #00afc7;
+                font-size: .28rem;
+                line-height: .4rem;
+
             }
         }
     }

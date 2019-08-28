@@ -5,6 +5,7 @@ import Less from 'less'
 import LessLoader from 'less-loader'
 import VueAwesomeSwiper from 'vue-awesome-swiper'
 import axios from 'axios'
+import store from './store'
 
 import './assets/style/reset.css'
 import './assets/style/border.css'
@@ -16,5 +17,6 @@ Vue.prototype.$axios= axios
 new Vue({
   el: '#app',
   router,
+  store,
   render: h => h(App),
 })

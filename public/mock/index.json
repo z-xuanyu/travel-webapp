@@ -53,24 +53,24 @@
       }],
     "recommendList": [{
         "id": "0001",
-        "imgUrl": "http://img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_140x140_80f63803.jpg",
-        "title": "故宫",
-        "desc": "东方宫殿建筑代表，世界宫殿建筑典范"
+        "imgUrl": "http://img1.qunarzz.com/sight/p0/1709/41/411f234d79457081a3.img.jpg_200x200_ea02ef99.jpg",
+        "title": "长隆野生动物世界",
+        "desc": "熊猫三胞胎与您共享欢乐时光"
       }, {
         "id": "0002",
-        "imgUrl": "http://img1.qunarzz.com/sight/p0/1511/d2/d2aec2dfc5aa771290.water.jpg_140x140_abb362a7.jpg",
-        "title": "南山滑雪场",
-        "desc": "北京专业级滑雪圣地"
+        "imgUrl": "http://img1.qunarzz.com/sight/p0/1707/88/889ae02b07140066a3.img.jpg_200x200_d3b1427c.jpg",
+        "title": "长隆欢乐世界",
+        "desc": "爱挑战的你怎能错过垂直过山车"
       }, {
         "id": "0003",
-        "imgUrl": "http://img1.qunarzz.com/sight/p0/1501/f4/f467729126949c3a.water.jpg_140x140_ef235b1c.jpg",
-        "title": "天安门广场",
-        "desc": "我爱北京天安门，天安门上太阳升"
+        "imgUrl": "http://img1.qunarzz.com/sight/p0/1908/70/70a9ac02a1edfba4a3.img.jpg_200x200_8d98cd84.jpg",
+        "title": "广州长隆旅游度假区",
+        "desc": "《奔跑吧兄弟》取景地"
       }, {
         "id": "0004",
         "imgUrl": "http://img1.qunarzz.com/sight/p0/1501/40/40b2b6c951b28fdd.water.jpg_140x140_1c863e5c.jpg",
-        "title": "水立方",
-        "desc": "中国的荣耀，阳光下的晶莹水滴"
+        "title": "广州番禺莲花山",
+        "desc": "广州番禺莲花山"
       }, {
         "id": "0005",
         "imgUrl": "http://img1.qunarzz.com/sight/p0/201308/23/b283071686e64dfec8d65eac.jpg_140x140_8c5a7c49.jpg",
@@ -102,6 +102,38 @@
         "imgUrl": "http://img1.qunarzz.com/sight/source/1505/b2/fde1bfcd057a52.jpg_r_640x214_bbf3fa44.jpg",
         "title": "儿童剧场，孩子的乐园",
         "desc": "带宝贝观看演出，近距离体验艺术的无穷魅力"
-      }]
+      }],
+      "weekendData":[
+        {
+          "id": "0001",
+          "imgUrl":"http://img1.qunarzz.com/sight/source/1811/15/66f14e0fd6fbb.jpg_r_640x214_5d69f21d.jpg",
+          "title":"清远周边逛",
+          "desc":"人人都有一双发现美的眼睛，身边的事物最熟悉不过，那你可曾发现了被人遗漏的美？"
+        },
+        {
+          "id": "0002",
+          "imgUrl":"http://img1.qunarzz.com/sight/source/1811/b8/5d599bbdcf8b57.jpg_r_640x214_2ee055e3.jpg",
+          "title":"浮在海上的绿洲",
+          "desc":"南国滨海之城，避寒胜地，有暖暖的阳光，海风习习，吃着海鲜逛逛老街多惬意啊"
+        },
+        {
+          "id": "0003",
+          "imgUrl":"http://img1.qunarzz.com/sight/source/1505/92/580e9ea4f37a1b.jpg_r_640x214_72112761.jpg",
+          "title":"广州必打卡",
+          "desc":"感受现代与传统相融合的广州"
+        },
+        {
+          "id": "0004",
+          "imgUrl":"http://img1.qunarzz.com/sight/source/1811/f8/29dfa785277839.jpg_r_640x214_7d051523.jpg",
+          "title":"阳江温泉知多少",
+          "desc":"这里的天空和大海让人心旷神怡，配上舒缓的优美音乐，泡个暖暖的温泉岂不美哉"
+        },
+        {
+          "id": "0005",
+          "imgUrl":"http://img1.qunarzz.com/sight/source/1812/47/cbdc44f461db0d.jpg_r_640x214_aab1da76.jpg",
+          "title":"珠江夜游",
+          "desc":"绚烂的霓虹将珠江照亮，跳上一艘游船，沉浸在这醉人的夜色中..."
+        }
+      ]
   }
 }

@@ -11,60 +11,12 @@
             </div>
         </div>
         <ul class="popular-lists">
-            <li class="popular-item">
+            <li class="popular-item" v-for="(item,index) in recommendList" :key="index">
                 <a href="#">
-                    <div class="item img">
-                        <img src="http://img1.qunarzz.com/sight/p0/1709/41/411f234d79457081a3.img.jpg_250x250_30e841af.jpg" alt="">
+                    <div class="item-img">
+                        <img :src="item.imgUrl">
                     </div>
-                    <div class="item-desc">长隆野生动物世界</div>
-                    <div class="item-price">
-                        <span>¥<em>266</em></span>
-                        起
-                    </div>
-                </a>
-            </li>
-            <li class="popular-item">
-                <a href="#">
-                    <div class="item img">
-                        <img src="http://img1.qunarzz.com/sight/p0/1709/41/411f234d79457081a3.img.jpg_250x250_30e841af.jpg" alt="">
-                    </div>
-                    <div class="item-desc">长隆野生动物世界</div>
-                    <div class="item-price">
-                        <span>¥<em>266</em></span>
-                        起
-                    </div>
-                </a>
-            </li>
-            <li class="popular-item">
-                <a href="#">
-                    <div class="item img">
-                        <img src="http://img1.qunarzz.com/sight/p0/1709/41/411f234d79457081a3.img.jpg_250x250_30e841af.jpg" alt="">
-                    </div>
-                    <div class="item-desc">长隆野生动物世界</div>
-                    <div class="item-price">
-                        <span>¥<em>266</em></span>
-                        起
-                    </div>
-                </a>
-            </li>
-            <li class="popular-item">
-                <a href="#">
-                    <div class="item img">
-                        <img src="http://img1.qunarzz.com/sight/p0/1709/41/411f234d79457081a3.img.jpg_250x250_30e841af.jpg" alt="">
-                    </div>
-                    <div class="item-desc">长隆野生动物世界</div>
-                    <div class="item-price">
-                        <span>¥<em>266</em></span>
-                        起
-                    </div>
-                </a>
-            </li>
-            <li class="popular-item">
-                <a href="#">
-                    <div class="item img">
-                        <img src="http://img1.qunarzz.com/sight/p0/1709/41/411f234d79457081a3.img.jpg_250x250_30e841af.jpg" alt="">
-                    </div>
-                    <div class="item-desc">长隆野生动物世界</div>
+                    <div class="item-desc">{{item.title}}</div>
                     <div class="item-price">
                         <span>¥<em>266</em></span>
                         起
@@ -76,6 +28,9 @@
 </template>
 <script>
 export default {
+    props:{
+        recommendList:Array
+    },
     name:'HomePopular',
 }
 </script>
@@ -102,11 +57,15 @@ export default {
             .popular-item{
                 width: 2rem;
                 padding: .06rem 0 .2rem;
-                // border: 1px solid red;
                 margin-right: .1rem;
-                .item img{
-                    width: 100%;
+                .item-img{
                     overflow: hidden;
+                    width: 2rem;
+                    height: 0;
+                    padding-bottom: 100%;
+                    img{
+                        width: 100%;
+                    }
                 }
                 .item-desc{
                     margin-top: .12rem;

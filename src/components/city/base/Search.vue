@@ -5,7 +5,7 @@
     </div>
     <div class="search-keyword" ref="keyword" v-show="keyword">
       <ul>
-        <li class="item" v-for="(item,index) in list" :key="index">{{item.name}}</li>
+        <router-link to="/" tag="li" class="item" v-for="(item,index) in list" :key="index">{{item.name}}</router-link>
         <li class="item" v-show="hasNoData">
             没有匹配到相关的数据
         </li>
@@ -42,14 +42,14 @@ export default {
           return
       }
       this.timer = setTimeout(() => {
-        const result = []
+        const result = [] 
         for (let key in this.cities) {
           this.cities[key].forEach(value => {
-            if (
+            if ( //判断搜索城市是否匹配到
               value.spell.indexOf(this.keyword) > -1 ||
               value.name.indexOf(this.keyword) > -1
             ) {
-              result.push(value);
+              result.push(value);  
             }
           })
         }

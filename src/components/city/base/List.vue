@@ -5,7 +5,7 @@
         <div class="title">当前城市</div>
         <div class="button-list">
           <div class="button-wrapper">
-            <div class="btn">广州</div>
+            <router-link tag="div" class="btn" to="/">广州</router-link>
           </div>
         </div>
       </div>
@@ -13,16 +13,16 @@
         <div class="title">热门城市</div>
         <div class="button-list">
           <div class="button-wrapper" v-for="(item,index) in hot" :key="index">
-            <div class="btn">{{item.name}}</div>
+            <router-link to="/" tag="div" class="btn">{{item.name}}</router-link>
           </div>
         </div>
       </div>
       <div class="area" v-for="(item,key) in cities" :key="key" :ref="key">
         <div class="title">{{key}}</div>
         <div class="item-list">
-          <div class="item" v-for="(innerItem,index) in item" :key="index">
+          <router-link to="/" tag="div" class="item" v-for="(innerItem,index) in item" :key="index">
               {{innerItem.name}}
-          </div>
+          </router-link>
         </div>
       </div>
     </div>
